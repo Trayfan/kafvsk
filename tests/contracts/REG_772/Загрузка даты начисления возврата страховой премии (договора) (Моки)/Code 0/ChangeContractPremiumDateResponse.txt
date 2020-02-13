@@ -1,0 +1,33 @@
+{
+	"SysInfo": {
+		"TimeStamp": 123123,
+		"InfId": 1,
+		"Version": "1",
+		"Method": "AccrualDate",
+		"Type": "Contract",
+		"Parameters": {
+			"InsuranceContractId": "2f9eeb38-f72e-4ea2-9012-234ebe5b5966"
+		},
+		"TicketId": "6f9619ff-8b86-d011-b42d-00cf4cf964ff",
+		"Errors": {
+			"Code": 0,
+			"Message": "”спешное выполнение"
+		}
+	},
+	"ResponseData": {
+		"requestId": "66672705-8857-407e-bdde-510f04b3761c",
+		"responseId": "fa1f502d-bbd8-47c6-9389-a90dcd394778",
+		"statusCode": 2,
+		"lastModified": "2019-10-05 16:41:41 UTC",
+		"errors": [{
+			"code": 12003078,
+			"description": "ƒата начислени€/возврата страховой премии больше или равна дате заключени€ договора",
+			"isCritical": true
+		}],
+		"processingResult": {
+			"contractId": "3fe13906-6318-4de0-b6dd-a956566b3cd4",
+			"contractSeries": "XXX",
+			"contractNumber": 3456789120
+		}
+	}
+}

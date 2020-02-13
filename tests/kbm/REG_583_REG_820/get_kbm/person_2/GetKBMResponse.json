@@ -1,0 +1,85 @@
+{
+    "SysInfo": {
+        "Status": 0,
+        "TimeStamp": 123123,
+        "InfId": 1,
+        "Version": "v.1",
+        "Method": "GetKBM",
+        "Type": "Person",
+        "TicketId": 123123,
+        "Comment": "Любой текст длинной до 1000 символов",
+        "Errors": {
+            "Code": 0,
+            "Message": "0. Успешное выполнение"
+        }
+    },
+    "ResponseData": {
+        "requestId": "3585c474-a817-4f58-a559-51161e54d5d2",
+        "responseId": "3585c474-a817-4f58-a559-51161e54d5d3",
+        "statusCode": 3,
+        "lastModified": "2019-10-01T00:00:00.0000Z",
+        "processingResult": {
+            "calculatedKbmValue": 0.95,
+            "calculateKbmResponses": [
+                {
+                    "identityCard": {
+                        "countryCode": "643",
+                        "docType": 45,
+                        "docSeries": "77МТ",
+                        "docNumber": "245716",
+                        "lastName": "Петрова",
+                        "firstName": "Юлия",
+                        "middleName": "Александровна",
+                        "birthDate": "1987-04-19"
+                    },
+                    "altIdentityCard": {
+                        "countryCode": "643",
+                        "docType": 54,
+                        "docSeries": "4509",
+                        "docNumber": "552917",
+                        "lastName": "Петрова",
+                        "firstName": "Юлия",
+                        "middleName": "Александровна",
+                        "birthDate": "1987-04-19"
+                    },
+                    "driverLicense": {
+                        "countryCode": 643,
+                        "docSeries": "77МТ",
+                        "docNumber": 245716,
+                        "lastName": "Петрова",
+                        "firstName": "Юлия",
+                        "middleName": "Александровна",
+                        "birthDate": "1987-04-19"
+                    },
+                    "altDriverLicense": {
+                        "countryCode": 643,
+                        "docSeries": "24АС",
+                        "docNumber": 552917,
+                        "lastName": "Иванова",
+                        "firstName": "Юлия",
+                        "middleName": "Александровна",
+                        "birthDate": "1987-04-19"
+                    },
+                    "partyRequestId": "026aa194-4a84-456e-a840-de415b638e69",
+                    "partyRequestEndDateTime": "2019-10-01T00:00:00.0000Z",
+                    "kbm": 0.55
+                },
+                {
+                    "identityCard": {
+                        "countryCode": 643,
+                        "docType": 45,
+                        "docSeries": "77МТ",
+                        "docNumber": 423811,
+                        "lastName": "Петров",
+                        "firstName": "Виктор",
+                        "middleName": "Иванович",
+                        "birthDate": "1982-08-30"
+                    },
+                    "partyRequestId": "456aa194-4a84-242e-a840-de877b638e70",
+                    "partyRequestEndDateTime": "2019-10-01T00:00:00.0000Z",
+                    "kbm": 0.95
+                }
+            ]
+        }
+    }
+}

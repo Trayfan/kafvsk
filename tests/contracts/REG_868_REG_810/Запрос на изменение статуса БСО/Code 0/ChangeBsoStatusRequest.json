@@ -1,0 +1,22 @@
+{
+    "SysInfo": {
+        "TimeStamp": 123123,
+        "InfId": 1,
+        "Version": "1.1",
+        "Method": "ChangeBsoStatus",
+        "TicketId": 123123,
+        "Comment": "Любой текст длинной до 1000 символов"
+    },
+    "RequestData": {
+        "bsoSeries": "EEE",
+        "bsoFirstNumber": "0000001",
+        "bsoLastNumber": "0005000",
+        "bsoStatus": {
+            "statusCode": "003",
+            "statusName": "Находится у страхователя",
+            "cisChangeDate": "2019-11-20T14:00:00.000Z",
+            "rsaChangeDate": "2019-11-20T14:10:00.000Z"
+        },
+        "productType": "1"
+    }
+}

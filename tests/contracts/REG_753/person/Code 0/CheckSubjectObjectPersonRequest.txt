@@ -1,0 +1,82 @@
+{
+	"SysInfo": {
+		"TimeStamp": 123123,
+		"InfId": 2,
+		"Version": "1.1",
+		"Method": "CheckSubjectObject",
+		"Type": "Person",
+		"TicketId": "6 f9619ff - 8 b86 - d011 - b42d - 00 cf4cf964ff",
+		"Comment": "Любой текст длинной до 1000 символов"
+	},
+	"RequestData": {
+		"subject": {
+			"partyType": "Person",
+			"partyRoles": [
+				"Owner",
+				"Driver"
+			],
+			"person": {
+				"mdmId": 13467985,
+				"inn": 644901371112,
+				"snils": "126029036 48",
+				"phone": "8(903)6400102",
+				"email": "sample@example.com",
+				"identityCard": {
+					"docType": 21,
+					"docSeries": 4682,
+					"docNumber": 157658,
+					"issueDate": "2010-01-01",
+					"countryCode": 643,
+					"lastName": "Иванов",
+					"firstName": "Иван",
+					"middleName": "Иванович",
+					"birthDate": "2000-01-01",
+					"address": "г. Москва, пр-т Кутузовский д. 45",
+					"addressFias": "b8481a08-aa02-4169-8ce8-0f36f43b165e",
+					"needFoivCheckIndicator": false
+				},
+				"altIdentityCard": {
+					"docType": 21,
+					"docSeries": 4682,
+					"docNumber": 157659,
+					"issueDate": "2010-01-01",
+					"countryCode": 643,
+					"lastName": "Иванов",
+					"firstName": "Иван",
+					"middleName": "Иванович",
+					"birthDate": "2000-01-01",
+					"address": "г. Москва, пр-т Кутузовский д. 45",
+					"addressFias": "b8481a08-aa02-4169-8ce8-0f36f43b165e",
+					"needFoivCheckIndicator": false
+				},
+				"driverLicense": {
+					"docType": 22,
+					"countryCode": 643,
+					"docSeries": "74 AA",
+					"docNumber": 123456,
+					"issueDate": "2017-01-01",
+					"lastName": "Иванов",
+					"firstName": "Иван",
+					"middleName": "Иванович",
+					"birthDate": "1990-01-01",
+					"firstLicensedDate": "2010-01-01",
+					"needFoivCheckIndicator": false
+				},
+				"altDriverLicense": {
+					"docType": 22,
+					"countryCode": 643,
+					"docSeries": "74 AA",
+					"docNumber": 123457,
+					"issueDate": "2017-01-01",
+					"lastName": "Иванов",
+					"firstName": "Иван",
+					"middleName": "Иванович",
+					"birthDate": "1990-01-01",
+					"firstLicensedDate": "2010-01-01",
+					"needFoivCheckIndicator": false
+				}
+			}
+		},
+		"actualizationDate": "2019-03-31"
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"SysInfo": {
+		"TimeStamp": 123124,
+		"InfId": 2,
+		"Version": "1.1",
+		"Method": "CheckSubjectObject",
+		"Type": "Vehicle",
+		"TicketId": "6f9619ff-8b86-d011-b42d-00cf4cf96477",
+		"Comment": "Любой текст длинной до 1000 символов",
+		"Errors": {
+			"Code": 0,
+			"Message": "Успешное выполнение"
+		}
+	},
+	"ResponseData": {
+		"requestId": "3585c474-a817-4f58-a559-51161e54d5d2",
+		"responseId": "3585c474-a817-4f58-a559-51161e54d5d2",
+		"statusCode": 3,
+		"lastModified": "2019-11-13 05:55:48 UTC",
+		"processingResult": {
+			"mdmFoundIndicator": false,
+			"documentCheckStatuses": [{
+					"documentType": "VehicleDocument",
+					"foivFoundIndicator": true,
+					"mdmFoundIndicator": true,
+					"foivCheckedIndicator": true,
+					"mdmCheckedIndicator": false
+				},
+				{
+					"documentType": "AltVehicleDocument",
+					"foivFoundIndicator": true,
+					"mdmFoundIndicator": true,
+					"foivCheckedIndicator": true,
+					"mdmCheckedIndicator": true
+				}
+			]
+		}
+	}
+}

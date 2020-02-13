@@ -1,0 +1,31 @@
+{
+    "SysInfo": {
+        "TimeStamp": 123123,
+        "InfId": 1,
+        "Version": "1.1",
+        "Method": "ChangeBsoStatusRecall",
+        "TicketId": 123123,
+        "Comment": "Любой текст длинной до 1000 символов",
+        "Errors": {
+            "Code": 0,
+            "Message": "0. Успешное выполнение"
+        }
+    },
+    "ResponseData": {
+        "requestId": "3585c474-a817-4f58-a559-51161e54d5d2",
+        "responseId": "3585c474-a817-4f58-a559-51161e54d5d2",
+        "statusCode": 2,
+        "lastModified": "2020-01-21T14:52:38.625Z",
+        "errors": [
+            {
+                "code": "string",
+                "description": "Произошла ошибка обработки запроса",
+                "isCritical": true,
+                "exceptionCode": 1,
+                "path": "contractInfo.parties[0].person.driverLicense",
+                "objectId": "3585c474-a817-4f58-a559-51161e54d5d2",
+                "objectType": "InsuranceContract"
+            }
+        ]
+    }
+}

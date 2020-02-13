@@ -1,0 +1,16 @@
+{
+    "SysInfo": {
+        "Status": 0,
+        "TimeStamp": 123123,
+        "InfId": 1,
+        "Version": "v.1",
+        "Method": "GetKBM",
+        "Type": "Organization2",
+        "TicketId": 123123,
+        "Comment": "Любой текст длинной до 1000 символов",
+        "Errors": {
+            "Code": 1,
+            "Message": "11. Указано недопустимое значение для поля Type"
+        }
+    }
+}

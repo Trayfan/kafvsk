@@ -1,0 +1,49 @@
+{
+	"SysInfo": {
+		"TimeStamp": 123123,
+		"InfId": 2,
+		"Version": "1.1",
+		"Method": "CheckSubjectObject",
+		"Type": "Organization",
+		"TicketId": "6 f9619ff - 8 b86 - d011 - b42d - 00 cf4cf964ff",
+		"Comment": "Ћюбой текст длинной до 1000 символов"
+	},
+	"RequestData": {
+		"subject": {
+			"partyType": "Organization",
+			"partyRoles": [
+				"Owner"
+			],
+			"organization": {
+				"residentIndicator": true,
+				"registrationDocument": {
+					"docType": 63,
+					"docSeries": 54,
+					"docNumber": 482780,
+					"countryCode": 643,
+					"inn": 6449013711,
+					"ogrn": 1026402000658,
+					"fullName": "ќбщество с ограниченной ответственностью —тул—быт“рест",
+					"address": "г. ћосква, пр-т  утузовский д. 45",
+					"addressFias": "b8481a08-aa02-4169-8ce8-0f36f43b165e",
+					"issueDate": "2010-01-01",
+					"needFoivCheckIndicator": false
+				},
+				"altRegistrationDocument": {
+					"docType": 63,
+					"docSeries": 54,
+					"docNumber": 481789,
+					"countryCode": 643,
+					"inn": 6449013711,
+					"ogrn": 1026402000658,
+					"fullName": "ќбщество с ограниченной ответственностью —тул—быт“рест",
+					"address": "г. ћосква, пр-т  утузовский д. 45",
+					"addressFias": "b8481a08-aa02-4169-8ce8-0f36f43b165e",
+					"issueDate": "2010-01-01",
+					"needFoivCheckIndicator": false
+				}
+			}
+		},
+		"actualizationDate": "2019-03-31"
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"SysInfo": {
+		"TimeStamp": 123124,
+		"InfId": 1,
+		"Version": "1",
+		"Method": "PolicyActivation",
+		"Type": "Contract",
+		"TicketId": "585c473-a735-4g47-a550-51475e54d5e6",
+		"Comment": "Любой текст длиннй до 1000 символов",
+		"Parameters": {
+			"requestId": "746c453-a135-4g47-a550-48569e54d5e6"
+		},
+		"Errors": {
+			"Code": 0,
+			"Message": "Успешное выполнение"
+		}
+	},
+	"ResponseData": {
+		"requestId": "2f9eeb38-f72e-4ea2-9012-234ebe5b5966",
+		"responseId": "5f68d06f-0f93-432c-9f26-41f6fe8497dc",
+		"statusCode": 2,
+		"lastModified": "2019-10-05 16:41:41 UTC",
+		"errors": [{
+			"code": 12003094,
+			"description": "Дата заключения договора должна быть меньше или равна дате начала действия договора",
+			"isCritical": true
+		}],
+		"processingResult": {
+			"contractId": "cbf3deda-577d-4fe3-af37-bfce3045f057",
+			"contractSeries": "XXX",
+			"contractNumber": 3456789120,
+			"statusCode": 1
+		}
+	}
+}

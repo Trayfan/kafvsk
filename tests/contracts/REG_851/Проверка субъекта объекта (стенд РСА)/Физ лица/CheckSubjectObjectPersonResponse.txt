@@ -1,0 +1,59 @@
+{
+	"SysInfo": {
+		"TimeStamp": 123124,
+		"InfId": 2,
+		"Version": "1.1",
+		"Method": "CheckSubjectObject",
+		"Type": "Person",
+		"TicketId": "6f9619ff-8b86-d011-b42d-00cf4cf96477",
+		"Comment": "Ћюбой текст длинной до 1000 символов",
+		"Errors": {
+			"Code": 0,
+			"Message": "”спешное выполнение"
+		}
+	},
+	"ResponseData": {
+		"requestId": "3585c474-a817-4f58-a559-51161e54d5d2",
+		"responseId": "3585c474-a817-4f58-a559-51161e54d5d2",
+		"statusCode": 3,
+		"lastModified": "2019-11-13 05:55:48 UTC",
+		"processingResult": {
+			"mdmFoundIndicator": true,
+			"documentCheckStatuses": [{
+					"documentType": "IdentityCard",
+					"foivFoundIndicator": false,
+					"mdmFoundIndicator": true,
+					"foivCheckedIndicator": false,
+					"mdmCheckedIndicator": true
+				},
+				{
+					"documentType": "AltIdentityCard",
+					"foivFoundIndicator": true,
+					"mdmFoundIndicator": true,
+					"foivCheckedIndicator": true,
+					"mdmCheckedIndicator": true
+				},
+				{
+					"documentType": "DriverLicense",
+					"foivFoundIndicator": true,
+					"mdmFoundIndicator": true,
+					"foivCheckedIndicator": true,
+					"mdmCheckedIndicator": true
+				},
+				{
+					"documentType": "AltDriverLicense",
+					"foivFoundIndicator": true,
+					"mdmFoundIndicator": true,
+					"foivCheckedIndicator": true,
+					"mdmCheckedIndicator": true
+				}
+			]
+		},
+		"errors": [{
+			"code": 10040,
+			"description": "—огласно данным ‘ќ»¬ на дату проверки документ, удостовер€ющего личность, был не действителен.",
+			"isCritical": true,
+			"exceptionCode": 0
+		}]
+	}
+}

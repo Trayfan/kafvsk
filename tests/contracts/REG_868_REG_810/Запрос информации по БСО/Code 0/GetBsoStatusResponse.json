@@ -1,0 +1,64 @@
+{
+    "SysInfo": {
+        "TimeStamp": 123123,
+        "InfId": 1,
+        "Version": "1.1",
+        "Method": "GetBsoStatus",
+        "TicketId": 123123,
+        "Comment": "Любой текст длинной до 1000 символов",
+        "Errors": {
+            "Code": 0,
+            "Message": "0. Запрос выполнен успешно"
+        }
+    },
+    "ResponseData": {
+        "requestId": "8644f95b-fdef-4872-9231-b540b95bfb49",
+        "responseId": "095f4ab4-9d93-4362-b65a-fb64bac64add",
+        "statusCode": 3,
+        "lastModified": "2019-11-14T12:29:23.000Z",
+        "processingResult": {
+            "bsoSeries": "HHH",
+            "bsoNumber": 1234835600,
+            "bsoStatuses": [
+                {
+                    "statusCode": 3,
+                    "statusName": "Находится у страхователя",
+                    "cisChangeDate": "2019-02-01T12:00:00.000Z",
+                    "rsaChangeDate": "2019-02-01T12:00:01.000Z"
+                },
+                {
+                    "statusCode": 2,
+                    "statusName": "Находится у страховщика",
+                    "cisChangeDate": "2019-01-25T12:00:00.000Z",
+                    "rsaChangeDate": "2019-01-25T12:00:01.000Z"
+                },
+                {
+                    "statusCode": 1,
+                    "statusName": "Отгружен",
+                    "cisChangeDate": "2019-01-20T12:00:00.000Z",
+                    "rsaChangeDate": "2019-01-20T12:00:01.000Z"
+                }
+            ],
+            "bsoOwners": [
+                {
+                    "insurerId": 1,
+                    "ownershipBeginDate": "2019-01-25T09:00:00.000Z",
+                    "insurerBranch": {
+                        "branchId": 6570,
+                        "branchName": "ДО Добрынинский",
+                        "receptionDate": "2019-01-27T09:00:00.000Z"
+                    }
+                }
+            ],
+            "insuranceContracts": [
+                {
+                    "contractSeries": "HHH",
+                    "contractNumber": 35567507,
+                    "closingDate": "2019-01-31T11:45:00.000Z",
+                    "effectiveDate": "2019-02-01T00:00:00.000Z",
+                    "expirationDate": "2020-01-31T00:00:00.000Z"
+                }
+            ]
+        }
+    }
+}

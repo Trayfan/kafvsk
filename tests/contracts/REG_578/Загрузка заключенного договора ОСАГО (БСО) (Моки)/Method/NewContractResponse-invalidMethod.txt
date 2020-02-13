@@ -1,0 +1,18 @@
+{
+	"SysInfo": {
+		"TimeStamp": 123124,
+		"InfId": 1,
+		"Version": "1",
+		"Method": "Невалидный метод",
+		"Type": "BSO",
+		"Parameters": {
+			"insuranceContractId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41"
+		},
+		"TicketId": "6f9619ff-8b86-d011-b42d-00cf4cf964ff",
+		"Errors": {
+			"Code": 1,
+			"Message": "10. Указано недопустимое значение для поля Method"
+		}
+	},
+	"ResponseData": {}
+}
