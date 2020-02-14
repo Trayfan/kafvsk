@@ -1,5 +1,5 @@
 from KafkaFramework import kafka
-from json import loads
+from json import loads, dump
 import os
 from threading import Thread
 from time import sleep
@@ -49,3 +49,5 @@ class MainTest:
         else:
             self.logger.info("Don't have an actual result!")
         kf.close_connection()
+        with open(os.path.join(self.PATH, "RESPONSE.json"), 'w', encoding='utf-8') as file:
+            dump(consumer_result[0], file, ensure_ascii=False)
