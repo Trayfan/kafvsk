@@ -62,7 +62,7 @@ class kafka:
         print("# Start listening")
         try:
             self.consumer.subscribe([topic])
-            msg = next(self.consumer)
+            msg = next(self.consumer).value
             self.consumer.unsubscribe()
             return msg
         except Exception as err:

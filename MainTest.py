@@ -13,6 +13,7 @@ class MainTest:
 
 
     def check_expected_actual(self, expected_result, actual_result):
+        print(actual_result)
         if expected_result == actual_result:
             print("Test pass!")
         else:

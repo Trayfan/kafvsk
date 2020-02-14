@@ -7,5 +7,5 @@ class Test_sub(MainTest):
         self.REQUEST_FILE = r"CheckSubjectObjectOrganizationRequest.json"
         self.RESPONSE_FILE = r"CheckSubjectObjectOrganizationResponse.json"
         self.request_topic = r"ContractsRequest"
-        self.response_topic = r"ContractsResponse"
+        self.response_topic = r"ContractsRequest"
         MainTest.__init__(self)
