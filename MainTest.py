@@ -4,6 +4,7 @@ import os
 from threading import Thread
 from time import sleep
 import queue
+import customLogger as cl
 
 
 class MainTest:
@@ -13,31 +14,29 @@ class MainTest:
 
 
     def check_expected_actual(self, expected_result, actual_result):
-        print(actual_result)
         if expected_result == actual_result:
-            print("Test pass!")
+            self.logger.critical("Test pass!")
         else:
-            print("Test failed!")
+            self.logger.critical("Test failed!")
 
     def run_consumer(self, kf, TicketId, consumer_result):
         msg = kf.get_msg(topic=self.response_topic)
         if msg:
             try:
                 if msg['SysInfo']['TicketId'] != TicketId:
-                    print(f"Find wrong message. {msg['SysInfo']['TicketId']} != {TicketId}")
+                    self.logger.warning(f"Find wrong message. {msg['SysInfo']['TicketId']} != {TicketId}")
                     self.run_consumer(kf, TicketId)
                 else:
-                    # print(msg)
                     consumer_result.append(msg)
             except Exception as err:
-                print(f"# Error run_consumer: {err}")
+                self.logger.error(f"# Error run_consumer: {err}")
 
     def run_producer(self, kf, msg):
         sleep(1)
         kf.send_msg(topic=self.request_topic, msg=msg)
 
     def test(self):
-        kf = kafka()
+        kf = kafka(cl=self.logger)
         consumer_result = []
         consumer_thread = Thread(target=self.run_consumer, args=(kf, self.request_data['SysInfo']['TicketId'], consumer_result))
         producer_thread = Thread(target=self.run_producer, args=(kf, self.request_data))
@@ -48,5 +47,5 @@ class MainTest:
         if consumer_result:
             self.check_expected_actual(expected_result=self.response_data, actual_result=consumer_result[0])
         else:
-            print("Don't have an actual result!")
+            self.logger.info("Don't have an actual result!")
         kf.close_connection()
