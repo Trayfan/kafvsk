@@ -46,7 +46,11 @@ class kafka:
     def send_msg(self, topic, msg):
         self.logger.info("# Send message")
         try:
-            self.producer.send(topic=topic, value=msg, partition=0)
+            self.producer.send(
+                topic=topic, 
+                key=b"", 
+                value=msg, 
+                partition=0)
             self.logger.info(f"> Send msg: {msg}")
         except Exception as err:
             self.logger.error(f"Error! __send_msg: {err}")

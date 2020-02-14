@@ -6,7 +6,7 @@
 		"Method": "CheckSubjectObject",
 		"Type": "Person",
 		"TicketId": "6 f9619ff - 8 b86 - d011 - b42d - 00 cf4cf964ff",
-		"Comment": "Любой текст длинной до 1000 символов"
+		"Comment": "Р›СЋР±РѕР№ С‚РµРєСЃС‚ РґР»РёРЅРЅРѕР№ РґРѕ 1000 СЃРёРјРІРѕР»РѕРІ"
 	},
 	"RequestData": {
 		"subject": {
@@ -27,11 +27,11 @@
 					"docNumber": 157658,
 					"issueDate": "2010-01-01",
 					"countryCode": 643,
-					"lastName": "Иванов",
-					"firstName": "Иван",
-					"middleName": "Иванович",
+					"lastName": "РРІР°РЅРѕРІ",
+					"firstName": "РРІР°РЅ",
+					"middleName": "РРІР°РЅРѕРІРёС‡",
 					"birthDate": "2000-01-01",
-					"address": "г. Москва, пр-т Кутузовский д. 45",
+					"address": "Рі. РњРѕСЃРєРІР°, РїСЂ-С‚ РљСѓС‚СѓР·РѕРІСЃРєРёР№ Рґ. 45",
 					"addressFias": "b8481a08-aa02-4169-8ce8-0f36f43b165e",
 					"needFoivCheckIndicator": false
 				},
@@ -41,11 +41,11 @@
 					"docNumber": 157659,
 					"issueDate": "2010-01-01",
 					"countryCode": 643,
-					"lastName": "Иванов",
-					"firstName": "Иван",
-					"middleName": "Иванович",
+					"lastName": "РРІР°РЅРѕРІ",
+					"firstName": "РРІР°РЅ",
+					"middleName": "РРІР°РЅРѕРІРёС‡",
 					"birthDate": "2000-01-01",
-					"address": "г. Москва, пр-т Кутузовский д. 45",
+					"address": "Рі. РњРѕСЃРєРІР°, РїСЂ-С‚ РљСѓС‚СѓР·РѕРІСЃРєРёР№ Рґ. 45",
 					"addressFias": "b8481a08-aa02-4169-8ce8-0f36f43b165e",
 					"needFoivCheckIndicator": false
 				},
@@ -55,9 +55,9 @@
 					"docSeries": "74 AA",
 					"docNumber": 123456,
 					"issueDate": "2017-01-01",
-					"lastName": "Иванов",
-					"firstName": "Иван",
-					"middleName": "Иванович",
+					"lastName": "РРІР°РЅРѕРІ",
+					"firstName": "РРІР°РЅ",
+					"middleName": "РРІР°РЅРѕРІРёС‡",
 					"birthDate": "1990-01-01",
 					"firstLicensedDate": "2010-01-01",
 					"needFoivCheckIndicator": false
@@ -68,9 +68,9 @@
 					"docSeries": "74 AA",
 					"docNumber": 123457,
 					"issueDate": "2017-01-01",
-					"lastName": "Иванов",
-					"firstName": "Иван",
-					"middleName": "Иванович",
+					"lastName": "РРІР°РЅРѕРІ",
+					"firstName": "РРІР°РЅ",
+					"middleName": "РРІР°РЅРѕРІРёС‡",
 					"birthDate": "1990-01-01",
 					"firstLicensedDate": "2010-01-01",
 					"needFoivCheckIndicator": false
