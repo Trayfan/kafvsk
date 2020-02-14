@@ -17,7 +17,7 @@ class kafka:
         try:
             return json.loads(open('settings.json', 'r').read())
         except Exception as err:
-            print(f"__get_settings: {err}")
+            print(f"Error! __get_settings: {err}")
 
     def __get_producer(self):
         try:
@@ -26,24 +26,26 @@ class kafka:
                 api_version=self.api_version,
                 value_serializer=lambda v: json.dumps(v).encode('utf-8'))
         except Exception as err:
-            print(f"__get_producer: {err}")
-            return False
+            print(f"Error! __get_producer: {err}")
+            return None
 
     def __get_consumer(self):
         try:
             return KafkaConsumer(
                 bootstrap_servers=[f"{self.ip}:{self.port}"],
-                api_version=self.api_version)
+                api_version=self.api_version,
+                value_deserializer=lambda v: json.loads(v.decode('utf-8')),
+                consumer_timeout_ms=10000)
         except Exception as err:
-            print(f"__get_consumer: {err}")
-            return False
+            print(f"Error! __get_consumer: {err}")
+            return None
 
     def send_msg(self, topic, msg):
         print("# Send message")
         try:
             self.producer.send(topic=topic, value=msg, partition=0)
         except Exception as err:
-            print(f"__send_msg: {err}")
+            print(f"Error! __send_msg: {err}")
 
     def close_connection(self):
         try:
@@ -60,13 +62,11 @@ class kafka:
         print("# Start listening")
         try:
             self.consumer.subscribe([topic])
-            print("Suscribed")
             msg = next(self.consumer)
-            print(msg)
             self.consumer.unsubscribe()
-            # print(msg)
             return msg
         except Exception as err:
-            print(f"__get_msg: {err}")
+            print(f"Error! __get_msg: {err}")
+            return None
 
 
