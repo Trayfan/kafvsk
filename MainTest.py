@@ -43,10 +43,11 @@ class MainTest:
         correlation_id = self.get_correlation_id()
         kf.send_msg(topic=self.request_topic, msg=self.request_data, correlation_id=correlation_id)
         msg = kf.get_msg(topic=self.response_topic, correlation_id=correlation_id)
+        with open(os.path.join(self.PATH, "RESPONSE.json"), 'w', encoding='utf-8') as file:
+            dump(msg, file, ensure_ascii=False)
         if msg:
             self.check_expected_actual(expected_result=self.response_data, actual_result=msg)
         else:
             self.logger.info("Don't have an actual result!")
         kf.close_connection()
-        with open(os.path.join(self.PATH, "RESPONSE.json"), 'w', encoding='utf-8') as file:
-            dump(msg, file, ensure_ascii=False)
+        

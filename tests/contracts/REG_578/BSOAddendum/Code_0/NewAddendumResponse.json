@@ -5,15 +5,15 @@
 		"Version": "1.1",
 		"Method": "LoadPolicy",
 		"Type": "BSOAddendum",
-		"TicketId": "585 c473 - a735 - 4 g47 - a550 - 51475e54 d5e6",
-		"Comment": "Любой текст длинной до 1000 символов",
+		"TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41",
+		"Comment": "Р›СЋР±РѕР№ С‚РµРєСЃС‚ РґР»РёРЅРЅРѕР№ РґРѕ 1000 СЃРёРјРІРѕР»РѕРІ",
 		"Parameters": {
 			"insuranceContractId": "ab06ca8c - 92 df - 4405 - 92 ec - c1fd53cbfe41",
 			"Requestid": "746 c453 - a135 - 4 g47 - a550 - 48569e54 d5e6"
 		},
 		"Errors": {
 			"Code": 0,
-			"Message": "Успешное выполнение"
+			"Message": "РЈСЃРїРµС€РЅРѕРµ РІС‹РїРѕР»РЅРµРЅРёРµ"
 		}
 	},
 	"ResponseData": {

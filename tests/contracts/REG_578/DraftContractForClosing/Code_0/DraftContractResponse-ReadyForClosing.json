@@ -1,17 +1,22 @@
 {
 	"SysInfo": {
-		"TimeStamp": 123123,
+		"TimeStamp": 123124,
 		"InfId": 1,
 		"Version": "1.1",
 		"Method": "LoadPolicy",
 		"Type": "DraftContractForClosing",
-		"TicketId": "585c473-a735-4g47-a550-51475e54d5e6",
-		"Comment": "Любой текст длинной до 1000 символов",
+		"TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41",
+		"Comment": "Р›СЋР±РѕР№ С‚РµРєСЃС‚ РґР»РёРЅРЅРѕР№ РґРѕ 1000 СЃРёРјРІРѕР»РѕРІ",
 		"Parameters": {
-			"insuranceContractId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41"
+			"insuranceContractId": "ab06ca8c - 92 df - 4405 - 92 ec - c1fd53cbfe41",
+			"Requestid": "746 c453 - a135 - 4 g47 - a550 - 48569e54 d5e6"
+		},
+		"Errors": {
+			"Code": 0,
+			"Message": "РЈСЃРїРµС€РЅРѕРµ РІС‹РїРѕР»РЅРµРЅРёРµ"
 		}
 	},
-	"RequestData": {
+	"ResponseData": {
 		"requestType": "DraftContract",
 		"internalIds": {
 			"cisContractId": "9235c474-n745-9f58-a559-51161e54d8bc",
@@ -48,8 +53,8 @@
 				"kpr": 1.16
 			},
 			"stoas": [{
-				"fullName": "СТО ХХI ВЕК",
-				"address": "г.Москва, пр-кт Ленина, д.1"
+				"fullName": "РЎРўРћ РҐРҐI Р’Р•Рљ",
+				"address": "Рі.РњРѕСЃРєРІР°, РїСЂ-РєС‚ Р›РµРЅРёРЅР°, Рґ.1"
 			}]
 		},
 		"vehicle": {
@@ -60,10 +65,10 @@
 			"vehicleDocument": {
 				"countryCode": 643,
 				"docType": 31,
-				"docSeries": "99АА",
+				"docSeries": "99РђРђ",
 				"docNumber": 999999,
 				"issueDate": "2018-12-01",
-				"licensePlate": "Р859ЕН73",
+				"licensePlate": "Р 859Р•Рќ73",
 				"vin": "4T1BE30K12U058669",
 				"bodyNumber": "ASV71",
 				"chassisNumber": "DF4464646FG77",
@@ -92,9 +97,9 @@
 						"docSeries": 4719,
 						"docNumber": 898989,
 						"issueDate": "2018-12-01",
-						"lastName": "Петрова",
-						"firstName": "Наталья",
-						"middleName": "Ивановна",
+						"lastName": "РџРµС‚СЂРѕРІР°",
+						"firstName": "РќР°С‚Р°Р»СЊСЏ",
+						"middleName": "РРІР°РЅРѕРІРЅР°",
 						"birthDate": "1990-01-01",
 						"addressFias": "0e8a15ac-7066-46eb-807c-af52c74b7190",
 						"needFoivCheckIndicator": true
@@ -105,9 +110,9 @@
 						"docNumber": 4711,
 						"docSeries": 22227,
 						"issueDate": "2016-12-01",
-						"lastName": "Иванова",
-						"firstName": "Наталья",
-						"middleName": "Ивановна",
+						"lastName": "РРІР°РЅРѕРІР°",
+						"firstName": "РќР°С‚Р°Р»СЊСЏ",
+						"middleName": "РРІР°РЅРѕРІРЅР°",
 						"birthDate": "1990-01-01",
 						"addressFias": "0e8a15ac-7066-46eb-807c-af52c74b7190",
 						"needFoivCheckIndicator": true
@@ -118,9 +123,9 @@
 						"docNumber": 123456,
 						"issueDate": "2018-12-10",
 						"countryCode": 643,
-						"lastName": "Петрова",
-						"firstName": "Наталья",
-						"middleName": "Ивановна",
+						"lastName": "РџРµС‚СЂРѕРІР°",
+						"firstName": "РќР°С‚Р°Р»СЊСЏ",
+						"middleName": "РРІР°РЅРѕРІРЅР°",
 						"birthDate": "1990-01-01",
 						"firstLicensedDate": "2016-12-10",
 						"drivingExperience": 2,
@@ -132,9 +137,9 @@
 						"docNumber": 456123,
 						"issueDate": "2016-12-10",
 						"countryCode": 643,
-						"lastName": "Иванова",
-						"firstName": "Наталья",
-						"middleName": "Ивановна",
+						"lastName": "РРІР°РЅРѕРІР°",
+						"firstName": "РќР°С‚Р°Р»СЊСЏ",
+						"middleName": "РРІР°РЅРѕРІРЅР°",
 						"birthDate": "1990-01-01",
 						"firstLicensedDate": "2016-12-10",
 						"drivingExperience": 2,
@@ -157,9 +162,9 @@
 						"docNumber": 321456,
 						"issueDate": "2011-12-10",
 						"countryCode": 643,
-						"lastName": "Петров",
-						"firstName": "Николай",
-						"middleName": "Иванович",
+						"lastName": "РџРµС‚СЂРѕРІ",
+						"firstName": "РќРёРєРѕР»Р°Р№",
+						"middleName": "РРІР°РЅРѕРІРёС‡",
 						"birthDate": "1985-01-01",
 						"firstLicensedDate": "2011-12-10",
 						"drivingExperience": 7,

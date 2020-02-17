@@ -1,0 +1,85 @@
+{
+	"SysInfo": {
+	  "TimeStamp": 123123,
+	  "InfId": 1,
+	  "Version": "v.1",
+	  "Method": "LoadPolicy",
+	  "Type": "DraftAddendum",
+	  "Parameters": {},
+	  "TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41"
+	},
+		"Errors": {
+			"Code": 0,
+			"Message": "Успешное выполнение"
+		},
+	"ResponseData": {
+		"requestId": "4018d075-5114-4630-b85e-af251186f69d",
+		"responseId": "fff69a47-bd9b-461c-803c-77e1156b89a9",
+		"statusCode": 3,
+		"lastModified": "2020-01-01T15:05:55.000Z",
+		"subjectObjectCheckResults": [
+		  {
+			"path": "vehicle",
+			"mdmFoundIndicator": false,
+			"documentCheckStatuses": [
+			  {
+				"documentType": "VehicleDocument",
+				"foivFoundIndicator": true,
+				"mdmFoundIndicator": true,
+				"foivCheckedIndicator": true,
+				"mdmCheckedIndicator": false
+			  }
+			]
+		  },
+		  {
+			"path": "parties[0].person",
+			"mdmFoundIndicator": true,
+			"documentCheckStatuses": [
+			  {
+				"documentType": "IdentityCard",
+				"foivFoundIndicator": false,
+				"mdmFoundIndicator": true,
+				"foivCheckedIndicator": false,
+				"mdmCheckedIndicator": true
+			  },
+			  {
+				"documentType": "DriverLicense",
+				"foivFoundIndicator": true,
+				"mdmFoundIndicator": true,
+				"foivCheckedIndicator": true,
+				"mdmCheckedIndicator": true
+			  }
+			]
+		  }
+		],
+		"processingResult": {
+		  "requestType": "DraftAddendum",
+		  "internalIds": {
+			"contractId": "89a2d9da-0aa8-4c08-92a3-e0b4b7bd0b5c",
+			"addendumId": "8800b9ea-9a90-4d6e-8d70-d3796c16c7ac"
+		  },
+		  "insuranceContract": {
+			"addendumSeries": "XXX",
+			"addendumNumber": 3456789121,
+			"statusCode": 1,
+			"readyToSignIndicator": true
+		  },
+		  "vehicle": {
+			"mdmId": 12345678912
+		  },
+		  "parties": [
+			{
+			  "partyType": "Person",
+			  "partyRoles": [
+				"PolicyHolder",
+				"Owner",
+				"Driver"
+			  ],
+			  "person": {
+				"mdmId": 83573853568
+			  }
+			}
+		  ]
+		}
+	  }
+}
