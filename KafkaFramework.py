@@ -38,17 +38,18 @@ class kafka:
                 bootstrap_servers=[f"{self.ip}:{self.port}"],
                 api_version=self.api_version,
                 value_deserializer=lambda v: json.loads(v.decode('utf-8')),
-                consumer_timeout_ms=10000)
+                consumer_timeout_ms=10000,
+                auto_offset_reset='earliest')
         except Exception as err:
             self.logger.error("Error! __get_consumer: {err}")
             return None
 
-    def send_msg(self, topic, msg):
+    def send_msg(self, topic, msg, correlation_id):
         self.logger.info("# Send message")
         try:
             self.producer.send(
                 topic=topic, 
-                key=b"", 
+                key=correlation_id, 
                 value=msg, 
                 partition=0)
             self.logger.info(f"> Send msg: {msg}")
@@ -65,17 +66,25 @@ class kafka:
         except AttributeError:
             pass
         self.logger.info("Connections closed!")
+        self.logger.info("="*60)
 
-    def get_msg(self, topic):
+    def get_msg(self, topic, correlation_id):
         self.logger.info("# Start listening")
+        msg = None
         try:
             self.consumer.subscribe([topic])
-            msg = next(self.consumer).value
+            for message in self.consumer:
+                if message.key == correlation_id:
+                    self.logger.info(f"Correlation id {correlation_id} exists in response topic.")
+                    msg = message.value
+                    break
+            if not msg:
+                self.logger.error(f"ERROR get_msg: No correlation_id in consumer_topic")
             self.consumer.unsubscribe()
             self.logger.info(f"> Get msg: {msg}")
             return msg
         except Exception as err:
-            self.logger.error(f"Error! __get_msg: {err}")
+            self.logger.error(f"Error! get_msg: {err}")
             return None
 
 

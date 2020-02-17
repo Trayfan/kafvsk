@@ -1,10 +1,11 @@
 from KafkaFramework import kafka
 from json import loads, dump
 import os
-from threading import Thread
+# from threading import Thread
 from time import sleep
-import queue
+# import queue
 import customLogger as cl
+import uuid
 
 
 class MainTest:
@@ -14,10 +15,12 @@ class MainTest:
 
 
     def check_expected_actual(self, expected_result, actual_result):
+        del expected_result['SysInfo']['TimeStamp']
+        del actual_result['SysInfo']['TimeStamp']
         if expected_result == actual_result:
-            self.logger.critical("Test pass!")
+            self.logger.info("Test pass!")
         else:
-            self.logger.critical("Test failed!")
+            self.logger.critical("Test failed! Expected result != Actual result.")
 
     def run_consumer(self, kf, TicketId, consumer_result):
         msg = kf.get_msg(topic=self.response_topic)
@@ -31,23 +34,19 @@ class MainTest:
             except Exception as err:
                 self.logger.error(f"# Error run_consumer: {err}")
 
-    def run_producer(self, kf, msg):
-        sleep(1)
-        kf.send_msg(topic=self.request_topic, msg=msg)
+    def get_correlation_id(self):
+        return bytes(str(uuid.uuid1()), encoding='utf8')
 
     def test(self):
         kf = kafka(cl=self.logger)
         consumer_result = []
-        consumer_thread = Thread(target=self.run_consumer, args=(kf, self.request_data['SysInfo']['TicketId'], consumer_result))
-        producer_thread = Thread(target=self.run_producer, args=(kf, self.request_data))
-        consumer_thread.start()
-        producer_thread.start()
-        consumer_thread.join()
-        producer_thread.join()
-        if consumer_result:
-            self.check_expected_actual(expected_result=self.response_data, actual_result=consumer_result[0])
+        correlation_id = self.get_correlation_id()
+        kf.send_msg(topic=self.request_topic, msg=self.request_data, correlation_id=correlation_id)
+        msg = kf.get_msg(topic=self.response_topic, correlation_id=correlation_id)
+        if msg:
+            self.check_expected_actual(expected_result=self.response_data, actual_result=msg)
         else:
             self.logger.info("Don't have an actual result!")
         kf.close_connection()
         with open(os.path.join(self.PATH, "RESPONSE.json"), 'w', encoding='utf-8') as file:
-            dump(consumer_result[0], file, ensure_ascii=False)
+            dump(msg, file, ensure_ascii=False)

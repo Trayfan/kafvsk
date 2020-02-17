@@ -3,14 +3,13 @@
 		"TimeStamp": 123124,
 		"InfId": 2,
 		"Version": "1.1",
-		"Method": "Невалидный метод",
-		"Type": "Organization",
+		"Method": "CheckSubjectObject",
+		"Type": "Organization2",
 		"TicketId": "b5921e67-411a-4a92-9ad2-12380fe0a020",
 		"Comment": "Любой текст длинной до 1000 символов",
 		"Errors": {
 			"Code": 1,
-			"Message": "10. Указано недопустимое значение для поля Method"
+			"Message": "10. Указано недопустимое значение для поля Type"
 		}
-	},
-	"ResponseData": null
+	}
 }
