@@ -5,7 +5,7 @@
 		"Version": "1.1",
 		"Method": "CheckSubjectObject",
 		"Type": "Person",
-		"TicketId": "6f9619ff-8b86-d011-b42d-00cf4cf96477",
+		"TicketId": "b762a5b6-659b-4c4b-a993-39d3b9b45691",
 		"Comment": "Любой текст длинной до 1000 символов",
 		"Errors": {
 			"Code": 0,
@@ -16,10 +16,11 @@
 		"requestId": "3585c474-a817-4f58-a559-51161e54d5d2",
 		"responseId": "3585c474-a817-4f58-a559-51161e54d5d2",
 		"statusCode": 3,
-		"lastModified": "2019-11-13 05:55:48 UTC",
+		"lastModified": "2019-11-13T05:55:48.528Z",
 		"processingResult": {
 			"mdmFoundIndicator": true,
-			"documentCheckStatuses": [{
+			"documentCheckStatuses": [
+				{
 					"documentType": "IdentityCard",
 					"foivFoundIndicator": false,
 					"mdmFoundIndicator": true,
@@ -49,11 +50,13 @@
 				}
 			]
 		},
-		"errors": [{
-			"code": 10040,
-			"description": "Согласно данным ФОИВ на дату проверки документ, удостоверяющего личность, был не действителен.",
-			"isCritical": true,
-			"exceptionCode": 0
-		}]
+		"errors": [
+			{
+				"code": 10040,
+				"description": "Согласно данным ФОИВ на дату проверки документ, удостоверяющего личность, был не действителен.",
+				"isCritical": true,
+				"exceptionCode": 0
+			}
+		]
 	}
 }
