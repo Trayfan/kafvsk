@@ -4,7 +4,7 @@
 	  "InfId": 1,
 	  "Version": "v.1",
 	  "Method": "LoadPolicy",
-	  "Type": "DraftContractForClosing",
+	  "Type": "Невалидный тип",
 	  "Parameters": {},
 	  "TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41"
 	},
