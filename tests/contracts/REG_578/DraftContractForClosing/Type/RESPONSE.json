@@ -1,15 +1,1 @@
-{
-    "SysInfo": {
-        "TimeStamp": 1581934026,
-        "InfId": 1,
-        "Version": "v.1",
-        "Method": "LoadPolicy",
-        "Type": "Невалидный тип",
-        "TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41",
-        "Errors": {
-            "Code": 1,
-            "Message": "11. Указано недопустимое значение для поля Type"
-        }
-    },
-    "ResponseData": null
-}
+null
