@@ -1,0 +1,13 @@
+{
+	"SysInfo": {
+		"TimeStamp": 123123,
+		"InfId": 1,
+		"Version": "1.1",
+		"Method": "GetEgarantPolicy",
+		"Parameters": {
+			"insuranceContractId": "3585c474-a817-4f58-a559-51161e54d5d2"
+		},
+		"TicketId": "ecad0055-f0eb-4751-804f-68e0b7d0b1f7",
+		"Comment": "Любой текст длиной до 1000 символов"
+	}
+}

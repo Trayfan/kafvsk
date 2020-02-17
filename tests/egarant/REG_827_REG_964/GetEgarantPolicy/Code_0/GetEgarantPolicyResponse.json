@@ -1,0 +1,244 @@
+{
+	"SysInfo": {
+		"TimeStamp": 123123,
+		"InfId": 1,
+		"Version": "1.1",
+		"Method": "GetEgarantPolicy",
+		"Parameters": {
+			"insuranceContractId": "3585c474-a817-4f58-a559-51161e54d5d2"
+		},
+		"TicketId": "ecad0055-f0eb-4751-804f-68e0b7d0b1f7",
+		"Comment": "Любой текст длиной до 1000 символов",
+		"Errors": {
+			"Code": 0,
+			"Message": "0. Успешное выполнение"
+		}
+	},
+	"ResponseData": {
+		"processingResult": {
+			"insuranceContract": {
+				"requestType": "Contract",
+				"confirmationDocuments": null,
+				"internalIds": {
+					"cisContractId": "1f0a0998-28af-47d1-ab36-8ec1fc0952d6",
+					"cisVersionId": "0",
+					"contractId": "02b0b5a8-bc26-4b4c-8d37-2f084bd0a1ae",
+					"addendumId": null
+				},
+				"insuranceContract": {
+					"closingType": "3",
+					"contractSeries": "XXX",
+					"contractNumber": "4564545656",
+					"addendumSeries": null,
+					"addendumNumber": null,
+					"addendumType": null,
+					"classifiedIndicator": false,
+					"contractClosingDate": "2019-10-04T16:41:41.090Z",
+					"contractEffectiveDate": "2019-12-01T00:00:00.000Z",
+					"addendumClosingDate": null,
+					"addendumEffectiveDate": null,
+					"expirationDate": "2020-11-30T23:59:59.590Z",
+					"revisionDate": "2020-11-13T15:10:56.000Z",
+					"terminationDate": null,
+					"terminationReason": null,
+					"utilisationPeriod1Begin": "2019-12-01",
+					"utilisationPeriod1End": "2020-03-31",
+					"utilisationPeriod2Begin": "2020-09-01",
+					"utilisationPeriod2End": "2020-11-30",
+					"utilisationPeriod3Begin": null,
+					"utilisationPeriod3End": null,
+					"driverLimitIndicator": true,
+					"registrationTransitIndicator": true,
+					"premiumAmount": 5986.71,
+					"premiumSynchDate": "2019-10-06",
+					"issueDate": "2019-10-04",
+					"primaryDrivingArea": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+					"trailerIndicator": false,
+					"purposeCode": "1",
+					"readyToSignIndicator": false,
+					"statusCode": null,
+					"rates": {
+						"tb": 2800.0,
+						"tbDate": null,
+						"kt": 2.0,
+						"kbm": 1.0,
+						"ko": 1.0,
+						"kvs": 0.96,
+						"km": 1.2,
+						"kpr": 1.16,
+						"ks": 0.8,
+						"kp": 0.0,
+						"kn": 1.0,
+						"additionalRates": null
+					},
+					"stoas": [
+						{
+							"fullName": "СТО ХХI ВЕК",
+							"address": "г.Москва, пр-кт Ленина, д.1"
+						}
+					],
+					"confirmationDocuments": null
+				},
+				"vehicle": {
+					"mdmId": "33345678912",
+					"maintenanceCardType": "53",
+					"maintenanceCardSeries": null,
+					"maintenanceCardNumber": "123458466178945",
+					"upcomingMaintenanceDate": "2020-01-01",
+					"vehicleDocument": {
+						"countryCode": "643",
+						"docType": "31",
+						"docSeries": "77АА",
+						"docNumber": "123456",
+						"issueDate": "2019-12-01",
+						"licensePlate": "Н714РХ73",
+						"vin": "4T1BE30K12U058669",
+						"bodyNumber": "ASV71",
+						"chassisNumber": "DF4464646FG77",
+						"vehicleType": "04",
+						"vehicleCategory": "02",
+						"modification": null,
+						"writtenMake": "Шевролет",
+						"writtenModel": "Лачеттино",
+						"productionYear": 2002,
+						"powerHp": 33.0,
+						"maxAllowedWeight": 4000.0,
+						"passengerCapacity": 0,
+						"needFoivCheckIndicator": true,
+						"confirmationDocuments": null
+					},
+					"altVehicleDocument": null,
+					"confirmationDocuments": null
+				},
+				"parties": [
+					{
+						"partyType": "Person",
+						"partyRoles": [
+							"Driver",
+							"PolicyHolder",
+							"Owner"
+						],
+						"Person": {
+							"mdmId": null,
+							"inn": "644901371115",
+							"snils": "112233445 95",
+							"phone": null,
+							"email": null,
+							"badHistoryBasis": "12",
+							"kbmValue": 1.0,
+							"kbmRequestId": "1314c26c-e791-4855-9eaa-cdfe6220f27b",
+							"identityCard": {
+								"docType": "12",
+								"docSeries": "6119",
+								"docNumber": "898989",
+								"issueDate": "2018-12-01",
+								"countryCode": "643",
+								"lastName": "Маркова",
+								"firstName": "Наталья",
+								"middleName": "Ивановна",
+								"birthDate": "1990-01-01",
+								"address": null,
+								"addressFias": "0e8a15ac-7066-46eb-807c-af52c74b7190",
+								"needFoivCheckIndicator": false,
+								"confirmationDocuments": null
+							},
+							"altIdentityCard": {
+								"docType": "12",
+								"docSeries": "053323",
+								"docNumber": "6711",
+								"issueDate": "2016-12-01",
+								"countryCode": "643",
+								"lastName": "Маркова",
+								"firstName": "Наталья",
+								"middleName": "Ивановна",
+								"birthDate": "1990-01-01",
+								"address": null,
+								"addressFias": "0e8a15ac-7066-46eb-807c-af52c74b7190",
+								"needFoivCheckIndicator": false,
+								"confirmationDocuments": null
+							},
+							"driverLicense": {
+								"docType": "22",
+								"countryCode": "643",
+								"docSeries": "5004",
+								"docNumber": "123456",
+								"issueDate": "2018-12 -10",
+								"lastName": "Петрова",
+								"firstName": "Наталья",
+								"middleName": "Ивановна",
+								"birthDate": "1990-01-01",
+								"firstLicensedDate": "2016-12-10",
+								"drivingExperience": 2,
+								"needFoivCheckIndicator": false,
+								"confirmationDocuments": null
+							},
+							"altDriverLicense": {
+								"docType": "22",
+								"countryCode": "643",
+								"docSeries": "5001",
+								"docNumber": "456123",
+								"issueDate": "2016-12 -10",
+								"lastName": "Иванова",
+								"firstName": "Наталья",
+								"middleName": "Ивановна",
+								"birthDate": "1990-01-01",
+								"firstLicensedDate": "2016-12-10",
+								"drivingExperience": 2,
+								"needFoivCheckIndicator": false,
+								"confirmationDocuments": null
+							},
+							"confirmationDocuments": null
+						},
+						"organization": null
+					},
+					{
+						"partyType": "Person",
+						"partyRoles": [
+							"Driver"
+						],
+						"Person": {
+							"mdmId": null,
+							"inn": null,
+							"snils": null,
+							"phone": null,
+							"email": null,
+							"badHistoryBasis": null,
+							"kbmValue": 1.0,
+							"kbmRequestId": "1314c26c-e791-4855-9eaa-cdfe6220f88b",
+							"identityCard": null,
+							"altIdentityCard": null,
+							"driverLicense": {
+								"docType": null,
+								"countryCode": "643",
+								"docSeries": "5003",
+								"docNumber": "321456",
+								"issueDate": "2011-12-10",
+								"lastName": "Петров",
+								"firstName": "Николай",
+								"middleName": "Иванович",
+								"birthDate": "1985-01-01",
+								"firstLicensedDate": "2011-12-10",
+								"drivingExperience": 7,
+								"needFoivCheckIndicator": false,
+								"confirmationDocuments": null
+							},
+							"altDriverLicense": null,
+							"confirmationDocuments": null
+						},
+						"organization": null
+					}
+				]
+			},
+			"egarantContractData": {
+				"insurerId": "00800000",
+				"paymentTransactionId": "12346",
+				"paymentDate": "2019-12-01T00:00:00"
+			}
+		},
+		"requestId": "9da481db-54c8-48ee-8b8f-4178c2d46080",
+		"responseId": "0d845c51-b0d8-4461-b95d-3dee6972282a",
+		"statusCode": 0,
+		"lastModified": "2020-01-24T13:50:25.146Z",
+		"errors": null
+	}
+}

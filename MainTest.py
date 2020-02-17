@@ -13,14 +13,28 @@ class MainTest:
         self.request_data = loads(open(os.path.join(self.PATH, self.REQUEST_FILE), 'r', encoding='utf8').read())
         self.response_data = loads(open(os.path.join(self.PATH, self.RESPONSE_FILE), 'r', encoding='utf8').read())
 
+    def ordered(self, obj):
+        if isinstance(obj, dict):
+            return sorted((k, self.ordered(v)) for k, v in obj.items())
+        if isinstance(obj, list):
+            return sorted(self.ordered(x) for x in obj)
+        else:
+            return obj
 
     def check_expected_actual(self, expected_result, actual_result):
         del expected_result['SysInfo']['TimeStamp']
         del actual_result['SysInfo']['TimeStamp']
-        if expected_result == actual_result:
-            self.logger.info("Test pass!")
-        else:
-            self.logger.critical("Test failed! Expected result != Actual result.")
+        try:
+            if self.ordered(actual_result) == self.ordered(expected_result):
+                self.logger.info("Test pass!")
+            else:
+                self.logger.critical("Test failed! Expected result != Actual result.")
+        except Exception as err:
+            self.logger.warning(f"ERROR check_expected_actual: Не получилось проверить первым методом, пробуем второй. {err}")
+            if actual_result == expected_result:
+                self.logger.info("Test pass!")
+            else:
+                self.logger.critical("Test failed! Expected result != Actual result.")
 
     def run_consumer(self, kf, TicketId, consumer_result):
         msg = kf.get_msg(topic=self.response_topic)
