@@ -31,15 +31,15 @@ class kafka:
         except Exception as err:
             self.logger.error(f"Error! __get_producer: {err}")
             return None
-
+#value_deserializer=lambda v: json.loads(v.decode('utf-8')),
     def __get_consumer(self):
         try:
             return KafkaConsumer(
                 bootstrap_servers=[f"{self.ip}:{self.port}"],
                 api_version=self.api_version,
-                value_deserializer=lambda v: json.loads(v.decode('utf-8')),
                 consumer_timeout_ms=10000,
-                auto_offset_reset='earliest')
+                auto_offset_reset='earliest',
+                max_poll_records=1)
         except Exception as err:
             self.logger.error("Error! __get_consumer: {err}")
             return None
@@ -70,13 +70,13 @@ class kafka:
 
     def get_msg(self, topic, correlation_id):
         self.logger.info("# Start listening")
-        msg = None
         try:
+            msg = ''
             self.consumer.subscribe([topic])
             for message in self.consumer:
                 if message.key == correlation_id:
                     self.logger.info(f"Correlation id {correlation_id} exists in response topic.")
-                    msg = message.value
+                    msg = json.loads(message.value.decode('utf-8'))
                     break
             if not msg:
                 self.logger.error(f"ERROR get_msg: No correlation_id in consumer_topic")

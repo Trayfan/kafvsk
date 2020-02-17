@@ -5,7 +5,7 @@
 		"Version": "1.1",
 		"Method": "CheckSubjectObject",
 		"Type": "Person",
-		"TicketId": "6 f9619ff - 8 b86 - d011 - b42d - 00 cf4cf964ff",
+		"TicketId": "b762a5b6-659b-4c4b-a993-39d3b9b45691",
 		"Comment": "Любой текст длинной до 1000 символов"
 	},
 	"RequestData": {
@@ -25,58 +25,58 @@
 					"docType": 21,
 					"docSeries": 4682,
 					"docNumber": 157658,
-					"issueDate": "2010-01-01",
+					"issueDate": "2010-01-01T00:00:00.000Z",
 					"countryCode": 643,
 					"lastName": "Иванов",
 					"firstName": "Иван",
 					"middleName": "Иванович",
-					"birthDate": "2000-01-01",
+					"birthDate": "2000-01-01T00:00:00.000Z",
 					"address": "г. Москва, пр-т Кутузовский д. 45",
 					"addressFias": "b8481a08-aa02-4169-8ce8-0f36f43b165e",
-					"needFoivCheckIndicator": false
+					"needFoivCheckIndicator": true
 				},
 				"altIdentityCard": {
 					"docType": 21,
 					"docSeries": 4682,
 					"docNumber": 157659,
-					"issueDate": "2010-01-01",
+					"issueDate": "2010-01-01T00:00:00.000Z",
 					"countryCode": 643,
 					"lastName": "Иванов",
 					"firstName": "Иван",
 					"middleName": "Иванович",
-					"birthDate": "2000-01-01",
+					"birthDate": "2000-01-01T00:00:00.000Z",
 					"address": "г. Москва, пр-т Кутузовский д. 45",
 					"addressFias": "b8481a08-aa02-4169-8ce8-0f36f43b165e",
-					"needFoivCheckIndicator": false
+					"needFoivCheckIndicator": true
 				},
 				"driverLicense": {
 					"docType": 22,
 					"countryCode": 643,
 					"docSeries": "74 AA",
 					"docNumber": 123456,
-					"issueDate": "2017-01-01",
+					"issueDate": "2017-01-01T00:00:00.000Z",
 					"lastName": "Иванов",
 					"firstName": "Иван",
 					"middleName": "Иванович",
-					"birthDate": "1990-01-01",
-					"firstLicensedDate": "2010-01-01",
-					"needFoivCheckIndicator": false
+					"birthDate": "1990-01-01T00:00:00.000Z",
+					"firstLicensedDate": "2010-01-01T00:00:00.000Z",
+					"needFoivCheckIndicator": true
 				},
 				"altDriverLicense": {
 					"docType": 22,
 					"countryCode": 643,
 					"docSeries": "74 AA",
 					"docNumber": 123457,
-					"issueDate": "2017-01-01",
+					"issueDate": "2017-01-01T00:00:00.000Z",
 					"lastName": "Иванов",
 					"firstName": "Иван",
 					"middleName": "Иванович",
-					"birthDate": "1990-01-01",
-					"firstLicensedDate": "2010-01-01",
-					"needFoivCheckIndicator": false
+					"birthDate": "1990-01-01T00:00:00.000Z",
+					"firstLicensedDate": "2010-01-01T00:00:00.000Z",
+					"needFoivCheckIndicator": true
 				}
 			}
 		},
-		"actualizationDate": "2019-03-31"
+		"actualizationDate": "2019-03-31T00:00:00.000Z"
 	}
 }
