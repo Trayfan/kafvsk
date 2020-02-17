@@ -1,6 +1,4 @@
 from MainTest import MainTest
-import customLogger as cl
-
 
 
 class Test_sub(MainTest):

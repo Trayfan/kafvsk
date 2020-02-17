@@ -1,12 +1,11 @@
 {
     "SysInfo": {
-        "Status": 0,
         "TimeStamp": 123123,
         "InfId": 1,
-        "Version": "v.1",
-        "Method": "GetKBM",
+        "Version": "1.1",
+        "Method": "Kbm",
         "Type": "Organization",
-        "TicketId": 123123,
+        "TicketId": "504f41b0-a38c-4297-9afb-aa838b49285d",
         "Comment": "Любой текст длинной до 1000 символов",
         "Errors": {
             "Code": 0,
@@ -14,24 +13,78 @@
         }
     },
     "ResponseData": {
-        "requestId": "3585c474-a817-4f58-a559-51161e54d5d2",
-        "responseId": "3585c474-a817-4f58-a559-51161e54d5d3",
-        "statusCode": 3,
-        "lastModified": "2019-10-01T00:00:00.0000Z",
-        "processingResult": {
-            "calculatedKbmValue": 1.13,
-            "calculateKbmResponses": [
-                {
-                    "organization": {
-                        "residentIndicator": true,
-                        "inn": 7801450283,
-                        "fullName": "АКЦИОНЕРНОЕ ОБЩЕСТВО ЭЙ ЭНД ЭЙ ГРУПП"
-                    },
-                    "partyRequestId": "765aa194-4a84-988e-a840-de546b638e71",
-                    "partyRequestEndDateTime": "2019-10-01T00:00:00.0000Z",
-                    "kbm": 1.13
-                }
-            ]
-        }
+        "RequestId": "3585c474-a817-4f58-a559-51161e54d5d2",
+        "ResponseId": "3585c474-a817-4f58-a559-51161e54d5d2",
+        "StatusCode": 3,
+        "LastModified": "2020-02-05T08:22:54.098+00:00",
+        "ProcessingResult": {
+            "CalculateKbmValue": 2.0,
+            "CalculateKbmResponse": {
+                "IdentityCard": {
+                    "CountryCode": 643,
+                    "DocType": 45,
+                    "DocSeries": 1379,
+                    "DocNumber": 79461382,
+                    "LastName": "Иванов",
+                    "FirstName": "Иван",
+                    "MiddleName": "Иванович",
+                    "BirthDate": "2000-01-01T00:00:00+00:00"
+                },
+                "AltIdentityCard": {
+                    "CountryCode": 643,
+                    "DocType": 45,
+                    "DocSeries": 1379,
+                    "DocNumber": 79461382,
+                    "LastName": "Иванов",
+                    "FirstName": "Иван",
+                    "MiddleName": "Иванович",
+                    "BirthDate": "2000-01-01T00:00:00+00:00"
+                },
+                "DriverLicense": {
+                    "CountryCode": 643,
+                    "DocSeries": 1379,
+                    "DocNumber": 79461382,
+                    "Lastname": "Иванов",
+                    "FirstName": "Иван",
+                    "MiddleName": "Иванович",
+                    "BirhtDate": "2000-01-01T00:00:00+00:00"
+                },
+                "AltDriverLicense": {
+                    "CountryCode": 643,
+                    "DocSeries": 1379,
+                    "DocNumber": 79461382,
+                    "Lastname": "Иванов",
+                    "FirstName": "Иван",
+                    "MiddleName": "Иванович",
+                    "BirhtDate": "2000-01-01T00:00:00+00:00"
+                },
+                "Organization": {
+                    "ResidentIndicator": true,
+                    "Inn": 6449013711,
+                    "FullName": "Полное наименование юридического лица"
+                },
+                "PartyRequestId": "137946825",
+                "PartyRequestEndDateTime": "2100-01-01T00:00:00+00:00",
+                "Kbm": 1.0,
+                "OriginalKbm": 1.0,
+                "PreviousContract": {
+                    "ContractSeries": "XXX",
+                    "ContractNumber": 13798246,
+                    "InsurerName": "Наименование СК"
+                },
+                "Accidents": [
+                    {
+                        "ContractSeries": "XXX",
+                        "ContractNumber": 13798246,
+                        "InsurerName": "Наименование СК",
+                        "AccidentDateTime": "2100-01-01T00:00:00+00:00",
+                        "AccidentType": 45,
+                        "EuroprotocolIndicator": true
+                    }
+                ],
+                "AccidentCount": 1
+            }
+        },
+        "Errors": null
     }
 }

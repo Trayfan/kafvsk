@@ -1,30 +1,16 @@
-from KafkaFramework import kafka
-from json import loads
-import os
-from threading import Thread
-
-def run_consumer(kf):
-    msg = kf.get_msg_from_kbm()
-    print(msg)
-
-def run_producer(kf, msg):
-    kf.send_to_kbm(msg)
-
-def test():
-
-    PATH = r".\tests\kbm\REG_583_REG_820\get_kbm\organization_1"
-    REQUEST_FILE = r"GetKbmRequest.json"
-    RESPONSE_FILE = r"GetKbmResponse.json"
+from MainTest import MainTest
 
 
-    request_data = loads(open(os.path.join(PATH, REQUEST_FILE), 'r', encoding='utf8').read())
-    response_data = loads(open(os.path.join(PATH, RESPONSE_FILE), 'r', encoding='utf8').read())
-    kf = kafka()
-    thread1 = Thread(target=run_consumer, args=(kf,))
-    thread2 = Thread(target=run_producer, args=(kf, request_data))
-    #thread1.start()
-    thread2.start()
-    #thread1.join()
-    thread2.join()
-    # kf.send_to_contracts(request_data)
+class Test_sub(MainTest):
+    def __init__(self, cl):
+        self.logger = cl
+        self.test_name = r"REG-583, REG-820 КБМ Проверить заполнение ответа при успешном выполнении запроса КБМ по 1 ЮЛ (Errors.Code=0)"
+        self.logger.info(f"# Start test {self.test_name}")
+
+        self.PATH = r".\tests\kbm\REG_583_REG_820\get_kbm\organization_1"
+        self.REQUEST_FILE = r"GetKbmRequest.json"
+        self.RESPONSE_FILE = r"GetKbmResponse.json"
+        self.request_topic = r"KbmRequest"
+        self.response_topic = r"KbmResponse"
+        MainTest.__init__(self)
 

@@ -3,7 +3,7 @@
         "TimeStamp": 123123,
         "InfId": 1,
         "Version": "1.1",
-        "Method": "GetKBM",
+        "Method": "Kbm",
         "Type": "Person",
         "TicketId": "504f41b0-a38c-4297-9afb-aa838b49285d",
         "Comment": "Любой текст длинной до 1000 символов"
@@ -13,17 +13,18 @@
         "contractEffectiveDate": "2018-04-15T00:00:00.0000Z",
         "contractClosingDate": "2018-04-13T00:00:00.0000Z",
         "persons": [
-            {
-                "driverLicense": {
-                    "countryCode": 643,
-                    "docSeries": "50МТ",
-                    "docNumber": 365723,
-                    "lastName": "Иванова",
-                    "firstName": "Юлия",
-                    "middleName": "Александровна",
-                    "birthDate": "1987-04-19"
-                }
+          {
+            "driverLicense": {
+              "countryCode": 643,
+              "driverLicenseType": 24,
+              "docSeries": 5015,
+              "docNumber": 365723,
+              "lastName": "Смирнов",
+              "firstName": "Иван",
+              "middleName": "Петрович",
+              "birthDate": "1977-04-30"
             }
+          }
         ]
-    }
+      }
 }

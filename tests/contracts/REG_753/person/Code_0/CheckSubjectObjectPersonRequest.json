@@ -5,8 +5,7 @@
 		"Version": "1.1",
 		"Method": "CheckSubjectObject",
 		"Type": "Person",
-		"TicketId": "b762a5b6-659b-4c4b-a993-39d3b9b45691",
-		"Comment": "Любой текст длинной до 1000 символов"
+		"TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41"
 	},
 	"RequestData": {
 		"subject": {
