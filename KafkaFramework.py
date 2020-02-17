@@ -66,7 +66,7 @@ class kafka:
         except AttributeError:
             pass
         self.logger.info("Connections closed!")
-        self.logger.info("="*60)
+        self.logger.info("="*120)
 
     def get_msg(self, topic, correlation_id):
         self.logger.info("# Start listening")

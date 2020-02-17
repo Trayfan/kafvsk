@@ -19,5 +19,5 @@ tests.contracts.REG_753.organization.Code_0.test.Test_sub(logger).test()
 tests.contracts.REG_753.organization.Method.test.Test_sub(logger).test()
 tests.contracts.REG_753.organization.Type.test.Test_sub(logger).test()
 
-# tests.contracts.REG_753.person.Code_0.test.Test_sub(logger).test()
-# tests.contracts.REG_753.vehicle.Code_0.test.Test_sub(logger).test()
+tests.contracts.REG_753.person.Code_0.test.Test_sub(logger).test()
+tests.contracts.REG_753.vehicle.Code_0.test.Test_sub(logger).test()
