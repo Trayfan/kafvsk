@@ -5,7 +5,6 @@
     "Version": "v.1",
     "Method": "LoadPolicy",
     "Type": "Bso",
-    "Parameters": {},
     "TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41"
   },
   "RequestData": {

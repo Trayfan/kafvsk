@@ -1,4 +1,5 @@
 import customLogger as cl
+<<<<<<< HEAD
 logger = cl.custom_logger()
 
 
@@ -51,3 +52,24 @@ tests.contracts.REG_753.vehicle.Code_0.test.Test_sub(logger).test()
 
 
 cl.generate_test_report(logger)
+=======
+import tests.contracts.REG_578.DraftContractForClosing.Code_0.test
+import tests.contracts.REG_578.DraftContractForClosing.Method.test
+import tests.contracts.REG_578.DraftContractForClosing.Type.test
+import tests.contracts.REG_578.BSO.Code_0.test
+import tests.contracts.REG_578.BSOAddendum.Code_0.test
+import tests.contracts.REG_578.DraftAddendum.Code_0.test
+import tests.contracts.REG_783.Contract.Code_0.test
+
+
+logger = cl.custom_logger()
+#tests.contracts.REG_578.DraftContractForClosing.Code_0.test.Test_sub(logger).test()
+tests.contracts.REG_578.DraftContractForClosing.Method.test.Test_sub(logger).test()
+#tests.contracts.REG_578.DraftContractForClosing.Type.test.Test_sub(logger).test()
+
+#tests.contracts.REG_578.BSO.Code_0.test.Test_sub(logger).test()
+#tests.contracts.REG_578.BSOAddendum.Code_0.test.Test_sub(logger).test()
+#tests.contracts.REG_578.DraftAddendum.Code_0.test.Test_sub(logger).test()
+
+#tests.contracts.REG_783.Contract.Code_0.test.Test_sub(logger).test()
+>>>>>>> REG 783
