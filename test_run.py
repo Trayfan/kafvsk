@@ -2,16 +2,16 @@ import customLogger as cl
 logger = cl.custom_logger()
 
 
-import tests.contracts.REG_753.organization.Code_0.test
-import tests.contracts.REG_753.organization.Method.test
-import tests.contracts.REG_753.organization.Type.test
-import tests.contracts.REG_753.person.Code_0.test
-import tests.contracts.REG_753.vehicle.Code_0.test
-tests.contracts.REG_753.organization.Code_0.test.Test_sub(logger).test()
-tests.contracts.REG_753.organization.Method.test.Test_sub(logger).test()
-tests.contracts.REG_753.organization.Type.test.Test_sub(logger).test()
-tests.contracts.REG_753.person.Code_0.test.Test_sub(logger).test()
-tests.contracts.REG_753.vehicle.Code_0.test.Test_sub(logger).test()
+# import tests.contracts.REG_753.organization.Code_0.test
+# import tests.contracts.REG_753.organization.Method.test
+# import tests.contracts.REG_753.organization.Type.test
+# import tests.contracts.REG_753.person.Code_0.test
+# import tests.contracts.REG_753.vehicle.Code_0.test
+# tests.contracts.REG_753.organization.Code_0.test.Test_sub(logger).test()
+# tests.contracts.REG_753.organization.Method.test.Test_sub(logger).test()
+# tests.contracts.REG_753.organization.Type.test.Test_sub(logger).test()
+# tests.contracts.REG_753.person.Code_0.test.Test_sub(logger).test()
+# tests.contracts.REG_753.vehicle.Code_0.test.Test_sub(logger).test()
 
 
 # import tests.contracts.REG_578.BSO.Code_0.test
@@ -66,6 +66,20 @@ tests.contracts.REG_753.vehicle.Code_0.test.Test_sub(logger).test()
 
 # import tests.contracts.REG_783.Contract.Code_0.test
 # tests.contracts.REG_783.Contract.Code_0.test.Test_sub(logger).test()
+
+
+import tests.contracts.REG_772.addendum.Code_0.test
+import tests.contracts.REG_772.addendum.Method.test
+import tests.contracts.REG_772.addendum.Type.test
+import tests.contracts.REG_772.contract.Code_0.test
+import tests.contracts.REG_772.contract.Method.test
+import tests.contracts.REG_772.contract.Type.test
+# tests.contracts.REG_772.addendum.Code_0.test.Test_sub(logger).test()
+tests.contracts.REG_772.addendum.Method.test.Test_sub(logger).test()
+# tests.contracts.REG_772.addendum.Type.test.Test_sub(logger).test()
+# tests.contracts.REG_772.contract.Code_0.test.Test_sub(logger).test()
+tests.contracts.REG_772.contract.Method.test.Test_sub(logger).test()
+# tests.contracts.REG_772.contract.Type.test.Test_sub(logger).test()
 
 
 
