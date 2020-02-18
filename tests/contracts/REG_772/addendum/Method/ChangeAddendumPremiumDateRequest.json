@@ -2,8 +2,8 @@
 	"SysInfo": {
 		"TimeStamp": 123123,
 		"InfId": 1,
-		"Version": "1",
-		"Method": "Невалидный метод",
+		"Version": "v.1",
+		"Method": "AccrualDate2",
 		"Type": "Addendum",
 		"Parameters": {
 			"InsuranceContractId": "2f9eeb38-f72e-4ea2-9012-234ebe5b5966"
@@ -13,7 +13,7 @@
 	"RequestData": {
 		"addendumSeries": "XXX",
 		"addendumNumber": 8394392535,
-		"premiumSynchDate": "2019-02-28 16:41:41 UTC",
-		"premiumSynchChangeDate": "2019-02-28 16:41:41 UTC"
+		"premiumSynchDate": "2019-02-28T16:41:41Z",
+		"premiumSynchChangeDate": "2019-02-28T16:41:41Z"
 	}
 }

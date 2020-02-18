@@ -1,0 +1,42 @@
+{
+	"SysInfo": {
+		"TimeStamp": 123123,
+		"InfId": 1,
+		"Version": "v.1",
+		"Method": "AccrualDate",
+		"Type": "Contract",
+		"Parameters": {
+			"InsuranceContractId": "2f9eeb38-f72e-4ea2-9012-234ebe5b5966"
+		},
+		"TicketId": "6f9619ff-8b86-d011-b42d-00cf4cf964ff",
+		"Errors": {
+			"Code": 0,
+			"Message": "0. Успешное выполнение"
+		}
+	},
+	"ResponseData": {
+        "RequestId": "3585c474-a817-4f58-a559-51161e54d5d2",
+        "ResponseId": "fa1f502d-bbd8-47c6-9389-a90dcd394778",
+        "StatusCode": 3,
+        "LastModified": "2020-01-23T13:50:25.146Z",
+        "Errors": [
+            {
+                "Code": "string",
+                "Description": "Произошла ошибка обработки запроса",
+                "IsCritical": false,
+                "ExceptionCode": 1,
+                "Path": "contractInfo.parties[0].person.driverLicense",
+                "ObjectId": "3585c474-a817-4f58-a559-51161e54d5d2",
+                "ObjectType": "InsuranceContract"
+            }
+        ],
+        "ProcessingResult": {
+            "ContractId": "2f9eeb38-f72e-4ea2-9012-234ebe5b5966",
+            "ContractSeries": "XXX",
+            "ContractNumber": "3456789120",
+            "AddendumId": null,
+            "AddendumSeries": null,
+            "AddendumNumber": null
+        }
+    }
+}
