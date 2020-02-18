@@ -1,15 +1,1 @@
-{
-    "SysInfo": {
-        "InfId": 1,
-        "Version": "v.1",
-        "Method": "Невалидный метод",
-        "Type": "DraftContractForClosing",
-        "Parameters": {},
-        "TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41",
-        "Errors": {
-            "Code": 1,
-            "Message": "10. Указано недопустимое значение для поля Method"
-        }
-    },
-    "ResponseData": null
-}
+{"SysInfo": {"TimeStamp": 1582017825, "InfId": 1, "Version": "v.1", "Method": "Невалидный метод", "Type": "DraftContractForClosing", "Parameters": {}, "TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41", "Errors": {"Code": 1, "Message": "10. Указано недопустимое значение для поля Method"}}, "ResponseData": null}
