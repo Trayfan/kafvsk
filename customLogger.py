@@ -58,11 +58,12 @@ def generate_test_report(logger):
                                 is_start = 1
                                 continue
                     
+                    all_test_names = test_names(known_issues)
                     for line in new_lines:
-                        if line.split('+')[0] in test_names(known_issues):
-                            test_report_body += f"{line}+{known_issues[test_names(known_issues).index(line.split('+')[0])]['bug']}\n"
+                        if line.split('+')[0] in all_test_names:
+                            test_report_body += f"{line}+{known_issues[all_test_names.index(line.split('+')[0])]['bug']}\n"
                         else:
-                            test_report_body += line
+                            test_report_body += line + "\n"
                     test_report.write(test_report_body)
     except Exception as err:
         logger.error(f"ERROR generate_test_report: {err}")
