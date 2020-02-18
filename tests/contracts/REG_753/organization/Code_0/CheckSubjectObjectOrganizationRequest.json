@@ -2,10 +2,11 @@
 	"SysInfo": {
 		"TimeStamp": 1581673891698,
 		"InfId": 2,
-		"Version": "1.1",
+		"Version": "v.1",
 		"Method": "CheckSubjectObject",
 		"Type": "Organization",
-		"TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41"
+		"TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41",
+		"Comment": "Любой текст длинной до 1000 символов"
 	},
 	"RequestData": {
 		"subject": {
