@@ -1,0 +1,33 @@
+{
+    "SysInfo": {
+        "TimeStamp": 1582031018,
+        "InfId": 2,
+        "Version": "v1",
+        "Method": "PolicyActivation",
+        "Type": "Contract",
+        "TicketId": "6f9619ff-8b86-d011-b42d-00cf4cf96477",
+        "Comment": "Любой",
+        "Parameters": {
+            "InsuranceContractId": "213"
+        },
+        "Errors": {
+            "Code": 0,
+            "Message": "Успешное выполнение"
+        }
+    },
+    "ResponseData": {
+		"requestId": "e124d770-e356-4a42-b239-e7fb6be4c4e2",
+		"responseId": "ebbcb0ea-6654-4640-a0e5-6d105fab82fe",
+		"statusCode": 3,
+		"lastModified": "2019-02-28T00:00:00.000Z",
+		"processingResult": {
+		   "firstAddendumId": "cfd35e89-e342-4678-9419-13da5fdc5f36",
+		   "firstAddendumSeries": "XXX",
+		   "firstAddendumNumber": 7648578435,
+		   "lastAddendumId": "0b3b5d17-e582-4cbc-82e0-dc89fbb5c008",
+		   "lastAddendumSeries": "XXX",
+		   "lastAddendumNumber": 7648578440,
+		   "statusCode": 2
+		}
+	 }
+}

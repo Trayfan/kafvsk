@@ -4,11 +4,11 @@
 	  "InfId": 2,
 	  "Version": "v1",
 	  "Method": "PolicyActivation",
-	  "Type": "Contract",
+	  "Type": "Невалидный тип",
 	  "TicketId": "6f9619ff-8b86-d011-b42d-00cf4cf96477",
 	  "Comment": "Любой",
 	  "Parameters": {
-		"InsuranceContractId" :"213"   
+		"InsuranceContractId" :"213"  
 	  }
 	},
 	"RequestData": {

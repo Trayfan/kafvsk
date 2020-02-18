@@ -1,11 +1,15 @@
 {
 	"SysInfo": {
 		"TimeStamp": 123124,
-		"InfId": 1,
-		"Version": "1",
-		"Method": "PolicyActivation",
-		"Type": "Contract",
-		"TicketId": "ab06ca8c-92df-4405-92ec-c1fd53cbfe41",
+	  "InfId": 2,
+	  "Version": "v1",
+	  "Method": "PolicyActivation",
+	  "Type": "Contract",
+	  "TicketId": "6f9619ff-8b86-d011-b42d-00cf4cf96477",
+	  "Comment": "Любой",
+	  "Parameters": {
+		"InsuranceContractId" :"213"   
+	  },
 		"Errors": {
 			"Code": 0,
 			"Message": "Успешное выполнение"
@@ -15,7 +19,7 @@
 		"requestId": "2f9eeb38-f72e-4ea2-9012-234ebe5b5966",
 		"responseId": "5f68d06f-0f93-432c-9f26-41f6fe8497dc",
 		"statusCode": 2,
-		"lastModified": "2019-10-05 16:41:41 UTC",
+		"lastModified": "2019-10-05T00:00:00.000Z",
 		"errors": [{
 			"code": 12003094,
 			"description": "Дата заключения договора должна быть меньше или равна дате начала действия договора",

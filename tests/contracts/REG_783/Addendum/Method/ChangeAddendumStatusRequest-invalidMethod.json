@@ -1,14 +1,14 @@
 {
 	"SysInfo": {
-		"TimeStamp": 123123,
-		"InfId": 1,
-		"Version": "1",
-		"Method": "PolicyActivation",
-		"Type": "Addendum",
-		"TicketId": "585c473-a735-4g47-a550-51475e54d5e6",
-		"Comment": "Любой текст длиной до 1000 символов",
-		"Parameters": {
-			"insuranceContractId": "PolicyActivation"
+		"TimeStamp": 123124,
+	  "InfId": 2,
+	  "Version": "v1",
+	  "Method": "РќРµРІР°Р»РёРґРЅС‹Р№ РјРµС‚РѕРґ",
+	  "Type": "Contract",
+	  "TicketId": "6f9619ff-8b86-d011-b42d-00cf4cf96477",
+	  "Comment": "Р›СЋР±РѕР№",
+	  "Parameters": {
+		"InsuranceContractId" :"213"  
 		}
 	},
 	"RequestData": {
@@ -20,8 +20,8 @@
 		"lastAddendumSeries": "XXX",
 		"lastAddendumNumber": 7648578440,
 		"premiumSynchDate": "2019-12-02",
-		"premiumSynchChangeDate": "2019-12-02 00:00:00 UTC",
-		"statusChangeDate": "2019-12-02 00:00:00 UTC",
+		"premiumSynchChangeDate": "2019-12-02T00:00:00.000Z",
+		"statusChangeDate": "2019-12-02T00:00:00.000Z",
 		"issueDate": "2019-12-02",
 		"statusCode": 2,
 		"reasonCode": 6

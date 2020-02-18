@@ -54,6 +54,7 @@ logger = cl.custom_logger()
 # import tests.contracts.REG_578.DraftContractForClosing.Method.test
 # import tests.contracts.REG_578.DraftContractForClosing.Type.test
 # import tests.contracts.REG_578.BSO.Code_0.test
+#import tests.contracts.REG_578.BSO.Code_0.test
 # import tests.contracts.REG_578.BSOAddendum.Code_0.test
 # import tests.contracts.REG_578.DraftAddendum.Code_0.test
 # tests.contracts.REG_578.DraftContractForClosing.Code_0.test.Test_sub(logger).test()
@@ -80,6 +81,22 @@ tests.contracts.REG_772.addendum.Method.test.Test_sub(logger).test()
 # tests.contracts.REG_772.contract.Code_0.test.Test_sub(logger).test()
 tests.contracts.REG_772.contract.Method.test.Test_sub(logger).test()
 # tests.contracts.REG_772.contract.Type.test.Test_sub(logger).test()
+#tests.contracts.REG_578.BSO.Code_0.test.Test_sub(logger).test()
+# tests.contracts.REG_578.BSOAddendum.Code_0.test.Test_sub(logger).test()
+# tests.contracts.REG_578.DraftAddendum.Code_0.test.Test_sub(logger).test()
+
+import tests.contracts.REG_783.Contract.Code_0.test
+import tests.contracts.REG_783.Contract.Method.test
+import tests.contracts.REG_783.Contract.Type.test
+import tests.contracts.REG_783.Addendum.Code_0.test
+import tests.contracts.REG_783.Addendum.Method.test
+import tests.contracts.REG_783.Addendum.Type.test
+tests.contracts.REG_783.Contract.Code_0.test.Test_sub(logger).test()
+tests.contracts.REG_783.Contract.Method.test.Test_sub(logger).test()
+tests.contracts.REG_783.Contract.Type.test.Test_sub(logger).test()
+tests.contracts.REG_783.Addendum.Code_0.test.Test_sub(logger).test()
+tests.contracts.REG_783.Addendum.Method.test.Test_sub(logger).test()
+tests.contracts.REG_783.Addendum.Type.test.Test_sub(logger).test()
 
 
 
