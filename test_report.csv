@@ -1,0 +1,7 @@
+Название теста+Результат теста
+Проверить заполнение ответа при успешном вызове запроса на изменение статуса договора ОСАГО и еОСАГО (Type = Contract) (Errors.Code=0)+Test failed! Expected result != Actual result.
+Проверить заполнение ответа при указании невалидиного значения атрибута Method (Errors.Code=1)+Test failed! Expected result != Actual result.
+Проверить заполнение ответа при указании невалидиного значения атрибута Type (Errors.Code=1)+Test failed! Expected result != Actual result.
+Проверить заполнение ответа при успешном вызове запроса на изменение статуса доп соглашения ОСАГО и еОСАГО (Type = Addendum) (Errors.Code=0)+Test failed! Expected result != Actual result.
+Проверить заполнение ответа при указании невалидиного значения атрибута Method (Errors.Code=1)+Test failed! Expected result != Actual result.
+Проверить заполнение ответа при указании невалидиного значения атрибута Type (Errors.Code=1)+Test failed! Expected result != Actual result.
