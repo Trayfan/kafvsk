@@ -1,0 +1,6 @@
+Название теста,Результат теста
+REG-753 CheckSubjectObject (Моки) Запрос на вызов проверки субъекта/объекта ЮЛ (Type = «Organization») (Errors. Code=0).,Test failed! Wrong actual result.
+REG-753 CheckSubjectObject (Моки) Запрос на вызов проверки субъекта/объекта ЮЛ (Type = «Organization») (Errors. Code=1) (Невалидный Method),Test failed! Expected result != Actual result.
+REG-753 CheckSubjectObject (Моки) Запрос на вызов проверки субъекта/объекта ЮЛ (Type = «Organization2») (Errors. Code=1) (Невалидный Type),Test failed! Wrong actual result.
+REG-753 CheckSubjectObject (Моки) Запрос на вызов проверки субъекта/объекта ФЛ (Type = «Person») (Errors. Code=0).,Test failed! Wrong actual result.
+REG-753 CheckSubjectObject (Моки) Запрос на вызов проверки субъекта/объекта ТС (Type = «Vehicle») (Errors. Code=0).,Test failed! Wrong actual result.

@@ -23,18 +23,22 @@ class MainTest:
 
     def check_expected_actual(self, expected_result, actual_result):
         del expected_result['SysInfo']['TimeStamp']
-        del actual_result['SysInfo']['TimeStamp']
+        try:
+            del actual_result['SysInfo']['TimeStamp']
+        except KeyError:
+            self.logger.critical("# Test failed! Wrong actual result.")
+            return 0
         try:
             if self.ordered(actual_result) == self.ordered(expected_result):
-                self.logger.info("Test pass!")
+                self.logger.info("# Test pass!")
             else:
-                self.logger.critical("Test failed! Expected result != Actual result.")
+                self.logger.critical("# Test failed! Expected result != Actual result.")
         except Exception as err:
             self.logger.warning(f"ERROR check_expected_actual: Не получилось проверить первым методом, пробуем второй. {err}")
             if actual_result == expected_result:
-                self.logger.info("Test pass!")
+                self.logger.info("# Test pass!")
             else:
-                self.logger.critical("Test failed! Expected result != Actual result.")
+                self.logger.critical("# Test failed! Expected result != Actual result.")
 
     def run_consumer(self, kf, TicketId, consumer_result):
         msg = kf.get_msg(topic=self.response_topic)
@@ -64,4 +68,3 @@ class MainTest:
         else:
             self.logger.info("Don't have an actual result!")
         kf.close_connection()
-        

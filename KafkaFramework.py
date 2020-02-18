@@ -31,7 +31,7 @@ class kafka:
         except Exception as err:
             self.logger.error(f"Error! __get_producer: {err}")
             return None
-#value_deserializer=lambda v: json.loads(v.decode('utf-8')),
+
     def __get_consumer(self):
         try:
             return KafkaConsumer(
@@ -45,7 +45,7 @@ class kafka:
             return None
 
     def send_msg(self, topic, msg, correlation_id):
-        self.logger.info("# Send message")
+        self.logger.info("Send message")
         try:
             self.producer.send(
                 topic=topic, 
@@ -69,7 +69,7 @@ class kafka:
         self.logger.info("="*120)
 
     def get_msg(self, topic, correlation_id):
-        self.logger.info("# Start listening")
+        self.logger.info("Start listening")
         try:
             msg = ''
             self.consumer.subscribe([topic])
