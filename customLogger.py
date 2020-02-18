@@ -32,14 +32,14 @@ def generate_test_report(logger):
     try:
         with open('test_report.csv', 'w', encoding='utf-8') as test_report:
             with open('test_log.log', 'r', encoding='utf-8') as test_log:
-                test_report_body = "Название теста,Результат теста\n"
+                test_report_body = "Название теста+Результат теста\n"
                 new_line = ""
                 is_start = 1
                 is_end = 0
                 for string in test_log.readlines():
                     if " # " in string:
                         if is_start:
-                            new_line += string.split("Start test ")[1][:-1] + ","
+                            new_line += string.split("Start test ")[1][:-1] + "+"
                             is_start = 0
                             is_end = 1
                             continue
