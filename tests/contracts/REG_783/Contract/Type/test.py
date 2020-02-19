@@ -5,7 +5,7 @@ from MainTest import MainTest
 class Test_sub(MainTest):
     def __init__(self, cl):
         self.logger = cl
-        self.test_name = r"Проверить заполнение ответа при указании невалидиного значения атрибута Type (Errors.Code=1)"
+        self.test_name = r"REG-783 Проверить заполнение ответа при указании невалидиного значения атрибута Type (Errors.Code=1)"
         self.logger.info(f"# Start test {self.test_name}")
         self.PATH = r".\tests\contracts\REG_783\Contract\Type"
         self.REQUEST_FILE = r"ChangeContractStatusRequest-invalidType.json"
