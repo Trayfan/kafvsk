@@ -6,7 +6,7 @@ from MainTest import MainTest
 class Test_sub(MainTest):
     def __init__(self, cl):
         self.logger = cl
-        self.test_name = r"Проверить заполнение ответа при указании невалидного значения атрибута Type (Errors.Code=1)"
+        self.test_name = r"REG-578 Проверить заполнение ответа при указании невалидного значения атрибута Type (Errors.Code=1)"
         self.logger.info(f"# Start test {self.test_name}")
 
         
